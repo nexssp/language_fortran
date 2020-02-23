@@ -1,5 +1,5 @@
 let languageConfig = Object.assign({}, require("../config.win32"));
-languageConfig.title = "NodeJS";
+languageConfig.title = "Fortran";
 languageConfig.authors = ["John Backus", "IBM"];
 languageConfig.description =
   "Fortran is compiled imperative programming language that is especially suited to numeric computation and scientific computing.";

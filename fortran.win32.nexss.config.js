@@ -4,6 +4,9 @@ languageConfig.authors = ["John Backus", "IBM"];
 languageConfig.description =
   "Fortran is compiled imperative programming language that is especially suited to numeric computation and scientific computing.";
 languageConfig.url = "https://www.fortran.com/";
+languageConfig.founders = ["John Backus (IBM)"];
+languageConfig.developers = [""];
+languageConfig.years = ["1957"];
 languageConfig.extensions = [".f90", ".f"];
 languageConfig.executeCommandLine = "";
 languageConfig.printCommandLine = ""; //no console.log() needed to display result eg node -p "4+6"

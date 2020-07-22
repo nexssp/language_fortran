@@ -17,9 +17,9 @@ languageConfig.compilers = {
   gfortran: {
     install: "scoop install gcc",
     command: "gfortran",
-    args: "<file> -o <fileNoExt> && <fileNoExt>",
-    help: ``
-  }
+    args: "<file> -o <file>.exe && <file>.exe",
+    help: ``,
+  },
 };
 languageConfig.errors = require("./nexss.fortran.errors");
 languageConfig.languagePackageManagers = {};

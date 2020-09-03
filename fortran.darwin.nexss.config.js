@@ -3,7 +3,7 @@ languageConfig.compilers = {
   gfortran: {
     install: "apt install gfortran",
     command: "gfortran",
-    args: "<file> -o <file>.exe && <file>.exe",
+    args: "<file> -o <file>.exe && ./<file>.exe",
     help: ``,
   },
 };

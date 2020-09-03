@@ -1,4 +1,7 @@
-let languageConfig = Object.assign({}, require("../config.win32"));
+let languageConfig = Object.assign(
+  {},
+  require(`../config.${process.platform}`)
+);
 languageConfig.title = "Fortran";
 languageConfig.authors = ["John Backus", "IBM"];
 languageConfig.description =

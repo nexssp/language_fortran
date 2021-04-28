@@ -1,9 +1,8 @@
 let languageConfig = Object.assign({}, require("./fortran.win32.nexss.config"));
 
-const os = require(`${process.env.NEXSS_SRC_PATH}/node_modules/@nexssp/os/`);
-const sudo = os.sudo();
+const sudo = process.sudo;
 
-const distName = os.name();
+const distName = process.distro;
 
 languageConfig.compilers = {
   gfortran: {
@@ -16,12 +15,12 @@ languageConfig.compilers = {
 
 switch (distName) {
   // case os.distros.ALPINE:
-  //   languageConfig.compilers.gfortran.install = os.replacePMByDistro(
+  //   languageConfig.compilers.gfortran.install = process.replacePMByDistro(
   //     "apk add gfortran"
   //   );
   //   break;
   default:
-    languageConfig.compilers.gfortran.install = os.replacePMByDistro(
+    languageConfig.compilers.gfortran.install = process.replacePMByDistro(
       languageConfig.compilers.gfortran.install
     );
     break;

@@ -8,7 +8,7 @@ languageConfig.compilers = {
     gfortran: {
         install: `${sudo}apt install -y gfortran`,
         command: "gfortran",
-        args: "<file> -o <file> && <file>",
+        args: "<file> -o <fileNoExt> && <fileNoExt>",
         help: ``,
     },
 };

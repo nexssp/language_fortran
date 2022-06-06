@@ -3,7 +3,7 @@ languageConfig.compilers = {
     gfortran: {
         install: "brew install gcc",
         command: "gfortran",
-        args: "<file> -o <file> && <file>",
+        args: "<file> -o <fileNoExt> && <fileNoExt>",
         help: ``,
     },
 };
